@@ -1,27 +1,29 @@
 <script lang="ts">
   import { link } from "svelte-navigator";
+  import LogInButton from "./LogInButton.svelte";
 </script>
 
 <div id="navbar">
   <a href="/" id="homepage-link">
     <div class="hept-title">
-      <img height="50px" alt="heptagon_logo" src="/heptagon.svg"/>
+      <img height="50px" alt="heptagon_logo" src="/heptagon.svg" />
       <span class="hept-title-text">Heptagon</span>
     </div>
   </a>
   <div id="navbar-links">
-    <a class="navbar-link"  use:link href="/info">Info</a>
-    <a class="navbar-link"  use:link href="/blog">Blog</a>
-    <a class="navbar-link"  use:link href="/contact">Contact</a>
+    <a class="navbar-link" use:link href="/info">Info</a>
+    <a class="navbar-link" use:link href="/blog">Blog</a>
+    <a class="navbar-link" use:link href="/contact">Contact</a>
+    <LogInButton />
   </div>
 </div>
 
 <style>
-  .hept-title{
+  .hept-title {
     display: flex;
     align-items: center;
   }
-  .hept-title-text{
+  .hept-title-text {
     margin-left: 5px;
     margin-top: 10px;
     font-weight: 500;
@@ -34,8 +36,8 @@
     align-items: center;
     top: 0;
     width: 100%;
-    height: clamp(70px,10vh,10vh);
-    background-color: rgb(100,0,200);
+    height: clamp(70px, 10vh, 10vh);
+    background-color: rgb(100, 0, 200);
   }
   #homepage-link,
   #homepage-link:hover {
@@ -61,5 +63,10 @@
     text-decoration: none;
     opacity: 50%;
     transition: 0.2s;
+  }
+  @media only screen and (max-width: 600px) {
+    .navbar-link {
+      display: none;
+    }
   }
 </style>
