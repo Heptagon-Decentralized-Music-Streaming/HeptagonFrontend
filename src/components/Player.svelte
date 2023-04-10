@@ -1,0 +1,23 @@
+<script>
+    import { link } from "svelte-navigator";
+    import { AudioPlayer } from 'svelte-audio-player'
+    import PurplePlayer from "./player/PurplePlayer.svelte";
+</script>
+  
+  <div id="hept-player">
+    <AudioPlayer src="/godfather.mp3">
+        <PurplePlayer/>
+    </AudioPlayer>
+  </div>
+  
+  <style>
+    #hept-player {
+      position: fixed;
+      left: 0;
+      align-items: center;
+      bottom: 0;
+      width: 100%;
+      height: 15vh;
+      background-color: #6400c8;
+    }
+  </style>
