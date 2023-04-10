@@ -9,6 +9,7 @@
         <PurplePlayer/>
     </AudioPlayer>
   </div>
+  <div id="hept-player-placeholder"/>
   
   <style>
     #hept-player {
@@ -19,5 +20,9 @@
       width: 100%;
       height: clamp(100px,15vh,15vh);
       background-color: #6400c8;
+    }
+    #hept-player-placeholder{
+      width: 100%;
+      height: clamp(100px,15vh,15vh);
     }
   </style>

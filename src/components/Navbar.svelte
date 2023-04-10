@@ -3,6 +3,7 @@
   import LogInButton from "./LogInButton.svelte";
 </script>
 
+<div id="navbar-placeholder"/>
 <div id="navbar">
   <a href="/" id="homepage-link">
     <div class="hept-title">
@@ -19,6 +20,10 @@
 </div>
 
 <style>
+  #navbar-placeholder{
+    width: 100%;
+    height: clamp(70px, 10vh, 10vh);
+  }
   .hept-title {
     display: flex;
     align-items: center;
