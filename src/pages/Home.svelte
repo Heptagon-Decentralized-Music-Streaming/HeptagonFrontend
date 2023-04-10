@@ -40,7 +40,7 @@
     margin: 0.5vw;
     width: clamp(150px, 15vw, 15vw);
     transition: 0.2s;
-    box-shadow: 0px 0px 5px 5px rgb(50, 0, 100);
+    border: 2px solid rgb(100, 0, 200);
   }
   .album-cover-image:hover {
     margin: 0;
