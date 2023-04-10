@@ -1,56 +1,23 @@
 <script lang="ts">
+  import { link } from "svelte-navigator";
   import { text } from "svelte/internal";
-  let albums = [
-    {
-      title: "The Godfather Soundtrack",
-      cover:
-        "https://source.boomplaymusic.com/group10/M00/11/18/e84753221e1f48859b67e0b4ba3bc927_320_320.jpg",
-    },
-    {
-        title: "Happy Together",
-        cover:
-            "https://upload.wikimedia.org/wikipedia/en/4/47/Turtleshappytogether.jpg"
-    },
-    {
-        title: "Happy Together",
-        cover:
-            "https://upload.wikimedia.org/wikipedia/en/4/47/Turtleshappytogether.jpg"
-    },
-    {
-        title: "Happy Together",
-        cover:
-            "https://upload.wikimedia.org/wikipedia/en/4/47/Turtleshappytogether.jpg"
-    },
-    {
-        title: "Happy Together",
-        cover:
-            "https://upload.wikimedia.org/wikipedia/en/4/47/Turtleshappytogether.jpg"
-    },
-    {
-        title: "Happy Together",
-        cover:
-            "https://upload.wikimedia.org/wikipedia/en/4/47/Turtleshappytogether.jpg"
-    }
-  ];
+  import albums from '../utils/TestAlbums';
 </script>
-
-<main>
   <h1 class="page-title">Decentralized Music Streaming</h1>
   <input class="search-bar" placeholder="Find new music..." />
   <h2 class="page-title">Recommended</h2>
   <div class="album-list">
     {#each albums as album, index}
-      <div class="album-cover">
+      <a class="album-cover" use:link href="/album/{album.id}">
         <img
           class="album-cover-image"
-          alt="album-1"
+          alt="album-{index}"
           src={album.cover}
         />
         <span class="album-title">{album.title}</span>
-      </div>
+      </a>
     {/each}
   </div>
-</main>
 
 <style>
   .page-title {
