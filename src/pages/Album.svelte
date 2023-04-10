@@ -23,10 +23,9 @@
 
 <style>
   .album-header {
-    width: 100%;
     display: flex;
-    align-items: center;
     background-color: rgb(40, 0, 80);
+    align-items: center;
     padding: 1vw;
     justify-content: left;
     padding-left: 15vw;
@@ -40,8 +39,8 @@
   }
   .song-list-container {
     margin-left: 18vw;
+    margin-right: 18vw;
     text-align: left;
-    width: 50%;
     font-size: 14pt;
   }
   .song-list {

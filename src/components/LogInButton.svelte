@@ -18,8 +18,7 @@
     font-size: 1em;
     line-height: normal;
     margin: 1vh 0;
-    min-height: 6vh;
-    height: 6vh;
+    height: 45px;
     text-align: center;
     transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
     user-select: none;

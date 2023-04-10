@@ -57,9 +57,9 @@
     margin-bottom: 1vh;
     padding-left: 15px;
     padding-right: 15px;
-    width: 70%;
-    height: 4vh;
-    border-radius: 20px;
+    width: 50%;
+    height: 6vh;
+    border-radius: 30px;
     font-family: Avenir;
     font-size: 15pt;
     border: none;
