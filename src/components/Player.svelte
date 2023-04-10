@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import { link } from "svelte-navigator";
     import { AudioPlayer } from 'svelte-audio-player'
     import PurplePlayer from "./player/PurplePlayer.svelte";
