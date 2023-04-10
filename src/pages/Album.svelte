@@ -8,12 +8,15 @@
 
 <div class="album-header">
   <img class="album-cover-image" alt="album-{album.index}" src={album.cover} />
-  <h1>{album.title}</h1>
+  <div class="album-header-text">
+    <h1>{album.title}</h1>
+    <span class="author-name">{album.author}</span>
+  </div>
 </div>
 <div class="song-list-container">
   <ol class="song-list">
     {#each album.songs as song}
-        <li class="song">{song}</li>
+      <li class="song">{song}</li>
     {/each}
   </ol>
 </div>
@@ -28,29 +31,37 @@
     justify-content: left;
     padding-left: 15vw;
   }
+  .album-header-text{
+    text-align: left;
+    padding: 3vw;
+  }
+  .author-name{
+    font-size: 16pt;
+  }
   .song-list-container {
     margin-left: 18vw;
     text-align: left;
     width: 50%;
     font-size: 14pt;
   }
-  .song-list{
+  .song-list {
     text-align: left;
     padding: 0;
   }
-  .song{
+  .song {
     background-color: rgb(40, 0, 80);
     text-align: left;
     padding: 0.5vh 1vw;
-    list-style-position:inside;
+    list-style-position: inside;
     border: 1px solid rgb(100, 0, 200);
   }
-  .song:hover{
+  .song:hover {
     background-color: rgb(50, 0, 100);
     cursor: pointer;
   }
   .album-cover-image {
     margin: 0.5vw;
     width: clamp(150px, 15vw, 15vw);
+    border: 2px solid rgb(100, 0, 200);
   }
 </style>

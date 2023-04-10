@@ -5,7 +5,7 @@
 
 <div id="navbar-placeholder"/>
 <div id="navbar">
-  <a href="/" id="homepage-link">
+  <a use:link href="/" id="homepage-link">
     <div class="hept-title">
       <img height="50px" alt="heptagon_logo" src="/heptagon.svg" />
       <span class="hept-title-text">Heptagon</span>
