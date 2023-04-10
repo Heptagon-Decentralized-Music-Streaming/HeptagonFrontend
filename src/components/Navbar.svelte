@@ -3,15 +3,29 @@
 </script>
 
 <div id="navbar">
-  <a href="/" id="homepage-link">Heptagon</a>
+  <a href="/" id="homepage-link">
+    <div class="hept-title">
+      <img height="50px" alt="heptagon_logo" src="/heptagon.svg"/>
+      <span class="hept-title-text">Heptagon</span>
+    </div>
+  </a>
   <div id="navbar-links">
-    <a class="navbar-link"  href="/info">Info</a>
-    <a class="navbar-link"  href="/blog">Blog</a>
-    <a class="navbar-link"  href="/contact">Contact</a>
+    <a class="navbar-link"  use:link href="/info">Info</a>
+    <a class="navbar-link"  use:link href="/blog">Blog</a>
+    <a class="navbar-link"  use:link href="/contact">Contact</a>
   </div>
 </div>
 
 <style>
+  .hept-title{
+    display: flex;
+    align-items: center;
+  }
+  .hept-title-text{
+    margin-left: 5px;
+    margin-top: 10px;
+    font-weight: 500;
+  }
   #navbar {
     position: fixed;
     display: flex;
@@ -20,7 +34,7 @@
     align-items: center;
     top: 0;
     width: 100%;
-    height: 10vh;
+    height: clamp(70px,10vh,10vh);
     background-color: rgb(100,0,200);
   }
   #homepage-link,

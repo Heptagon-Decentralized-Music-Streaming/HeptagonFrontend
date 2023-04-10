@@ -17,7 +17,7 @@
       align-items: center;
       bottom: 0;
       width: 100%;
-      height: 15vh;
+      height: clamp(100px,15vh,15vh);
       background-color: #6400c8;
     }
   </style>
