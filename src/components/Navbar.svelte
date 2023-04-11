@@ -55,7 +55,9 @@
     color: #ffffff;
   }
   #navbar-links {
+    display: flex;
     position: relative;
+    align-items: center;
     margin-right: 2vw;
   }
   .navbar-link,
