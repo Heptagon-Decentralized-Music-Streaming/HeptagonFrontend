@@ -42,7 +42,7 @@
     top: 0;
     width: 100%;
     height: clamp(70px, 10vh, 10vh);
-    background-color: rgb(100, 0, 200);
+    background-color: rgb(100, 0, 200,0.6);
   }
   #homepage-link,
   #homepage-link:hover {

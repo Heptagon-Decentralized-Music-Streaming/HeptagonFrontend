@@ -19,7 +19,7 @@
       bottom: 0;
       width: 100%;
       height: clamp(100px,15vh,15vh);
-      background-color: #6400c8;
+      background-color: rgb(100, 0, 200,0.6);
     }
     #hept-player-placeholder{
       width: 100%;

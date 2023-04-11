@@ -85,7 +85,7 @@
     justify-content: space-around;
   }
   .icon{
-    background-color: #3d007b;
+    background-color: rgb(60, 0, 120,0.9);
     width: 3rem;
     height: 3rem;
     border-radius: 99999px;
