@@ -62,6 +62,7 @@
     border-radius: 30px;
     font-family: Avenir;
     font-size: 15pt;
-    border: none;
+    border: 2px solid rgb(128, 0, 255);
+    background-color: rgb(70 0 140);
   }
 </style>
