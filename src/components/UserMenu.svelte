@@ -26,7 +26,7 @@
     position: absolute;
     top: 54px;
     right: 5px;
-    background-color: rgb(40, 0, 80);
+    background-color: var(--background-color-light);
     border-radius: 10px;
     width: 140px;
   }
@@ -36,22 +36,24 @@
     margin: 0;
   }
   .option-list > li {
-    border-top: 2px solid rgb(100, 0, 200);
+    border-top: 1px solid var(--accent-color);
     padding: 5px 0;
   }
   .option-list > li:hover {
-    background-color: rgb(72, 0, 143);
+    background-color: var(--background-color-highlight);
     cursor: pointer;
   }
   .option-list > li:first-of-type {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    border-top: none;
   }
   .option-list > li:last-of-type {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    border-bottom: none;
   }
   .option-list > li > :global(a){
-    color: rgba(255, 255, 255, 0.87);
+    color: var(--main-font-color)
   }
 </style>

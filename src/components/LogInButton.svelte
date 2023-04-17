@@ -44,12 +44,12 @@
   }
   #wallet-btn,
   #logged-wallet-btn {
-    font-family: "Space Grotesk";
+    font-family: var(--lens-font);
     border-radius: 30px;
     box-sizing: border-box;
-    border-width: 2px;
-    border-color: rgb(0, 80, 3);
-    color: rgb(0, 80, 30);
+    border-width: 1px;
+    border-color: var(--lens-color-dark);
+    color: var(--lens-color-dark);
     cursor: pointer;
     display: inline-flex;
     align-items: center;
@@ -62,20 +62,20 @@
     touch-action: manipulation;
     will-change: transform;
     text-transform: uppercase;
-    background-color: rgb(171, 254, 44);
+    background-color: var(--lens-color-light);
     justify-content: center;
     width: 150px;
   }
   #wallet-btn:hover {
-    color: rgb(128, 0, 255);
-    border-color: rgb(128, 0, 255);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
   }
   #logged-wallet-btn {
-    background-color: rgb(40, 0, 80);
-    border-color: rgb(100, 0, 200);
-    color: #fff;
+    background-color: var(--background-color-light);
+    border-color: var(--accent-color);
+    color: var(--main-font-color);
     font-family: Avenir;
     text-transform: none;
   }

@@ -24,7 +24,7 @@
 <style>
   .album-header {
     display: flex;
-    background-color: rgb(40, 0, 80);
+    background-color: var(--background-color-light);
     align-items: center;
     padding: 1vw;
     justify-content: left;
@@ -48,19 +48,23 @@
     padding: 0;
   }
   .song {
-    background-color: rgb(40, 0, 80);
+    background-color: var(--background-color-light);
     text-align: left;
     padding: 0.5vh 1vw;
     list-style-position: inside;
-    border: 1px solid rgb(100, 0, 200);
+    border: 1px solid var(--accent-color);
+    border-bottom: none;
+  }
+  .song:last-of-type{
+    border: 1px solid var(--accent-color);
   }
   .song:hover {
-    background-color: rgb(50, 0, 100);
+    background-color: var(--background-color-highlight);
     cursor: pointer;
   }
   .album-cover-image {
     margin: 0.5vw;
     width: clamp(150px, 15vw, 15vw);
-    border: 2px solid rgb(100, 0, 200);
+    border: 1px solid var(--accent-color);
   }
 </style>

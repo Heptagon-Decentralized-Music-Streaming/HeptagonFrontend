@@ -19,7 +19,8 @@
       bottom: 0;
       width: 100%;
       height: clamp(100px,15vh,15vh);
-      background-color: rgb(100, 0, 200,0.6);
+      background-color: var(--main-color-alpha);
+      border-top: 1px solid var(--accent-color);
     }
     #hept-player-placeholder{
       width: 100%;

@@ -40,12 +40,12 @@
     margin: 0.5vw;
     width: clamp(150px, 15vw, 15vw);
     transition: 0.2s;
-    border: 2px solid rgb(100, 0, 200);
+    border: 2px solid var(--accent-color);
   }
   .album-cover-image:hover {
     margin: 0;
     width: 16vw;
-    box-shadow: 0px 0px 5px 5px rgb(128, 0, 255);
+    box-shadow: 0px 0px 5px 5px var(--accent-color);
   }
   .album-title {
     width: clamp(150px, 15vw, 15vw);
@@ -60,9 +60,9 @@
     width: 50%;
     height: 6vh;
     border-radius: 30px;
-    font-family: Avenir;
+    font-family: var(--main-font);
     font-size: 15pt;
-    border: 2px solid rgb(128, 0, 255);
-    background-color: rgb(70 0 140);
+    border: 2px solid var(--accent-color);
+    background-color: var(--background-color-highlight);
   }
 </style>

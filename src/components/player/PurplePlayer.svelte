@@ -85,7 +85,8 @@
     justify-content: space-around;
   }
   .icon{
-    background-color: rgb(60, 0, 120,0.9);
+    border: 1px solid var(--accent-color);
+    background-color: var(--background-color-alpha);
     width: 3rem;
     height: 3rem;
     border-radius: 99999px;
