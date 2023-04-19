@@ -44,7 +44,6 @@
   }
   .album-cover-image:hover {
     margin: 0;
-    width: 16vw;
     box-shadow: 0px 0px 5px 5px var(--accent-color);
   }
   .album-title {
