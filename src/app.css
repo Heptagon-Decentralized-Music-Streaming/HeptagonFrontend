@@ -1,11 +1,12 @@
 :root {
   --main-color: rgb(100, 0, 200);
-  --main-color-alpha: rgb(100, 0, 200,0.6);
+  --main-color-alpha: rgb(100, 0, 200,0.9);
   --background-color: rgb(30,0,60);
   --background-color-light: rgb(40, 0, 80);
   --background-color-highlight: rgb(70, 0, 140);
   --background-color-alpha: rgb(30,0,60,0.6);
   --accent-color: rgb(180, 100, 255);
+  --accent-color-alpha: rgb(180, 100, 255,0.8);
   --main-font-color:rgb(255, 255, 255);
   --lens-color-light:rgb(170, 255, 40);
   --lens-color-dark: rgb(0, 80, 0);
@@ -87,4 +88,41 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: var(--background-color-alpha);
+  height: 8px;
+  border-radius: 4px;
+}
+
+/******** Firefox ********/
+input[type="range"]::-moz-range-track {
+  background: var(--background-color-alpha);
+  height: 8px;
+  border-radius: 4px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -4px; /* Centers thumb on the track */
+  background-color: var(--accent-color);
+  border-radius: 7.5px;
+  height: 15px;
+  width: 15px;    
+}
+
+input[type="range"].slider-track::-webkit-range-progress {
+  background: red;
+}
+::-webkit-progress-bar  {
+  background-color: red;
 }

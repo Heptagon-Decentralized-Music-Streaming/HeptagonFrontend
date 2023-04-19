@@ -3,7 +3,7 @@ let albums = [
         title: "The Godfather Soundtrack",
         author: "Nino Rota",
         cover:
-            "https://source.boomplaymusic.com/group10/M00/11/18/e84753221e1f48859b67e0b4ba3bc927_320_320.jpg",
+            "https://i.scdn.co/image/ab67616d0000b273532d6c2da59560659e672fdd",
         id: "0x440c-0x79",
         songs: [
             "The Godfather Waltz (Main Title)",
