@@ -45,7 +45,7 @@
     display: none;
     width: 5rem;
     height: 2rem;
-    transform: rotate(-90deg) translate(50px,-22px) ;
+    transform: rotate(-90deg) translate(50px,-25px) ;
     position: absolute;
   }
   .volume-icon:hover+.volume-control,.volume-control:hover{
